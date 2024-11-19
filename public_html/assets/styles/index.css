@@ -1,0 +1,28 @@
+.greeting-card {
+    background: url('/assets/images/club_background.webp') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.down-arrow {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 20px; /* Space between text and arrow */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.down-arrow:hover {
+    transform: translateY(20px) !important;
+    color: #acb4bd !important;
+}
+
+#scroll-to {
+    scroll-margin-top: var(--header-height);
+}
+
+@media screen and (max-width: 1440px) {
+}

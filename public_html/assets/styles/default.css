@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --header-height: 6em;
+    --header-font-color: #0b2285;
+    --header-font-hover-color: #374ed1;
+}
+
+/*
+Main Tags
+*/
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f5f7ff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer {
+    background-color: #bfc4d9;
+}
+
+/*
+Header
+*/
+
+.nav-link {
+    font-size: 1.1em;
+    color: var(--header-font-color) !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--header-font-hover-color) !important;
+}
