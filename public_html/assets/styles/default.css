@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --header-height: 6em;
+    --header-height: 66px;
     --header-font-color: #0b2285;
     --header-font-hover-color: #374ed1;
 }
@@ -18,7 +18,12 @@ body {
     padding: 0;
 }
 
+main {
+    margin-top: calc(var(--header-height) + 5px);
+}
+
 header {
+    top: 0;    
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -30,6 +35,10 @@ footer {
 /*
 Header
 */
+
+#header-anchor {
+    margin-top: var(--header-height);
+}
 
 .nav-link {
     font-size: 1.1em;

@@ -1,3 +1,5 @@
+/*Greeting Card*/
+
 .greeting-card {
     background: url('/assets/images/club_background.webp') no-repeat center center;
     background-size: cover;
@@ -8,21 +10,23 @@
     justify-content: center;
 }
 
+.greeting-card-text-container h1 {
+    font-size: calc(1.5rem + 3.5vw);
+}
+
 .down-arrow {
+    display: block;
     text-decoration: none;
     font-size: 2rem;
-    margin-top: 20px; /* Space between text and arrow */
+    margin-top: 20px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .down-arrow:hover {
-    transform: translateY(20px) !important;
+    transform: translateY(10px) !important;
     color: #acb4bd !important;
 }
 
 #scroll-to {
     scroll-margin-top: var(--header-height);
-}
-
-@media screen and (max-width: 1440px) {
-}
+} 

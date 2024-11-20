@@ -1,3 +1,5 @@
+const currentScript = document.currentScript;
+
 fetch('/assets/html-modules/footer.html')
     .then(response => {
         if (!response.ok) {
@@ -8,7 +10,11 @@ fetch('/assets/html-modules/footer.html')
     })
 
     .then(data => {
-        document.getElementsByTagName('footer')[0].innerHTML = data;
+        const insertAt = document.getElementById('insert-footer-here');
+        insertAt.insertAdjacentHTML("afterend", data);
+
+        insertAt.remove();
+        currentScript.remove();
     })
 
     .catch(error => {

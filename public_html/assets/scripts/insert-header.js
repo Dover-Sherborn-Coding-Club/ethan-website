@@ -8,7 +8,11 @@ fetch('/assets/html-modules/header.html')
     })
 
     .then(data => {
-        document.getElementsByTagName('header')[0].innerHTML = data;
+        const insertAt = document.getElementById('insert-header-here');
+        insertAt.insertAdjacentHTML("afterend", data);
+
+        insertAt.remove();
+        currentScript.remove();
     })
 
     .catch(error => {
