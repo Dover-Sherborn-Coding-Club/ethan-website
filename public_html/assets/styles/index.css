@@ -11,7 +11,7 @@
 }
 
 .greeting-card-text-container h1 {
-    font-size: calc(1.5rem + 3.5vw);
+    font-size: calc(1.5rem + 3vw);
 }
 
 .down-arrow {
