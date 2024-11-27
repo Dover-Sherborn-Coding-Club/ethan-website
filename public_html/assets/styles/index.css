@@ -4,14 +4,10 @@
     background: url('/assets/images/club_background.webp') no-repeat center center;
     background-size: cover;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.greeting-card-text-container h1 {
-    font-size: calc(1.5rem + 3vw);
 }
 
 .down-arrow {
@@ -29,4 +25,10 @@
 
 #scroll-to {
     scroll-margin-top: var(--header-height);
-} 
+}
+
+@media only screen and (min-width: 550px) {
+    .greeting-card-text-container h1 {
+        font-size: calc(1.5rem + 3vw);
+    }
+}
