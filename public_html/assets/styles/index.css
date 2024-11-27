@@ -32,3 +32,19 @@
         font-size: calc(1.5rem + 3vw);
     }
 }
+
+/*
+Main Section
+*/
+
+.main-img {
+    border-radius: 15px;
+}
+
+/*
+Misc
+*/
+
+.change-list-padding {
+    padding-left: 1.2em;
+}
