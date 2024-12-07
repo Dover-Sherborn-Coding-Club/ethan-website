@@ -1,0 +1,30 @@
+.about-section {
+  border-radius: 15px;
+  /*background-color: var(--club-gray);*/
+  background-color: white;
+  padding: 10px;
+  height: 100%;
+}
+
+.section-buttons-container {
+  gap: 10px;
+  margin-bottom: -10px;
+}
+
+.section-button {
+  background-color: var(--club-pink);
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 20%;
+  transition: all 0.2s ease;
+  border-style: none;
+}
+
+.section-button:hover{
+  background-color: var(--club-pink-hover);
+}
+
+.section-button.selected {
+  transform: translateY(-10px);
+  background-color: var(--club-gray);
+}

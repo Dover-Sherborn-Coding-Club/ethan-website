@@ -2,6 +2,9 @@
 
 :root {
     --header-height: 66px;
+    --club-gray: #bfc4d9;
+    --club-pink: #cb3694;
+    --club-pink-hover: #b20e76;
     --club-blue: #0da9fd;
     --club-blue-hover: #0d89fd;
 }
@@ -31,7 +34,7 @@ header {
 }
 
 footer {
-    background-color: #bfc4d9;
+    background-color: var(--club-gray);
     /*Just to keep it consistent I guess*/
     margin-top: var(--header-height);
 }
