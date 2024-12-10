@@ -12,7 +12,7 @@ fetch('/assets/html-modules/header.html')
         insertAt.insertAdjacentHTML("afterend", data);
 
         insertAt.remove();
-        currentScript.remove();
+        //document.currentScript.remove();
     })
 
     .catch(error => {

@@ -1,4 +1,4 @@
-const currentScript = document.currentScript;
+const footerLoadedEvent = new Event('footerLoaded');
 
 fetch('/assets/html-modules/footer.html')
     .then(response => {
@@ -14,7 +14,9 @@ fetch('/assets/html-modules/footer.html')
         insertAt.insertAdjacentHTML("afterend", data);
 
         insertAt.remove();
-        currentScript.remove();
+        //document.currentScript.remove();
+
+        document.dispatchEvent(footerLoadedEvent);
     })
 
     .catch(error => {
