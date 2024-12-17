@@ -1,10 +1,14 @@
 .about-section {
   border-radius: 15px;
-  /*background-color: var(--club-gray);*/
   background-color: white;
   padding: 20px 10px 10px 20px;
   height: 100%;
   min-height: 60vh;
+  display: none;
+}
+
+.about-section.selected {
+  display: block;
 }
 
 .section-buttons-container {
@@ -19,12 +23,16 @@
   border-radius: 20px;
   padding: 5px 10px;
   width: 20%;
-  transition: all 0.2s ease;
+  transition: transform 0.25s ease-in-out, background-color 0.3s ease;
   border-style: none;
 }
 
-.section-button:hover{
+.section-button:hover {
   background-color: var(--club-pink-hover);
+}
+
+.section-button.selected:hover {
+  background-color: var(--club-gray-hover);
 }
 
 .section-button.selected {

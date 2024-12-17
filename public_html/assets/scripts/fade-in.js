@@ -1,24 +1,28 @@
 document.addEventListener("footerLoaded", () => {
     const elements = document.querySelectorAll('body *:not(.no-fade-in *)');
 
-    document.getElementsByTagName('header')[0].style.animationPlayState = "running";
+    //document.getElementsByTagName('header')[0].style.animationPlayState = "running";
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.style.animationPlayState = "running";
+                const element = entry.target;
 
-                entry.target.addEventListener("animationend", () => {
-                    entry.target.style.animation = "none";
+                element.classList.add('fade-in-running');
+   
+                element.addEventListener("animationend", () => {
+                    element.classList.remove('fade-in-running');
+
+                    element.style.animation = "none";
                 }, { once: true });
 
-                observer.unobserve(entry.target);
+                observer.unobserve(element);
             }
         });
         //10% of element seen
     }, { threshold: 0.1 });
 
-    elements.forEach((el) => {
-        observer.observe(el);
+    elements.forEach((element) => {
+        observer.observe(element);
     });
 });
