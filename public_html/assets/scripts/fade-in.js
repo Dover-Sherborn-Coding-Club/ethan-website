@@ -13,14 +13,16 @@ document.addEventListener("footerLoaded", () => {
                 element.addEventListener("animationend", () => {
                     element.classList.remove('fade-in-running');
 
-                    element.style.animation = "none";
+                    element.classList.add('fade-in-end');
+                    //element.style.animation = "none";
                 }, { once: true });
 
                 observer.unobserve(element);
             }
         });
-        //10% of element seen
-    }, { threshold: 0.1 });
+    }, 
+    //10% of element seen
+    { threshold: 0.1 });
 
     elements.forEach((element) => {
         observer.observe(element);

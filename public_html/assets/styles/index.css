@@ -45,6 +45,11 @@ Main Section
 Misc
 */
 
-.change-list-padding {
-    padding-left: 1.2em;
+.section-list {
+    padding-left: 1.2rem;
+}
+
+.section-list * {
+    font-size: 1.15rem;
+    margin-bottom: 0.75em;
 }
