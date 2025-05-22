@@ -26,14 +26,14 @@ body {
     overflow-anchor: none;
 }
 
-body *:not(.no-fade-in):not(.no-fade-in *) {
+/*body *:not(.no-fade-in):not(.no-fade-in *) {
     animation: fadeInAnimation ease 1.5s;
     animation-play-state: paused;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     will-change: opacity, transform;
 }
-
+*/
 .fade-in-running {
     animation-play-state: running !important;
 }
