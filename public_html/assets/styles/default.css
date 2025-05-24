@@ -3,11 +3,20 @@
 
 :root {
     --header-height: 66px;
-    --club-gray:#dddddd;
+    --lighter-gray: #4a4747;
+    --club-gray:#bdbdbd;
+    --club-gray-hover: #989494;
     --club-pink: #cb3694;
     --club-pink-hover: #b20e76;
     --club-blue: #0da9fd;
     --club-blue-hover: #0d89fd;
+}
+
+/*At 340, the header wraps to new line, so increase header height*/
+@media (max-width: 340px) {
+  :root {
+    --header-height: 105px;
+  }
 }
 
 /*
@@ -17,35 +26,20 @@ Main Tags
 body {
     font-family: 'Exo 2', sans-serif;
     scroll-behavior: smooth;
-    background-color: #f5f7ff;
+    background-color: #2e2c2c;
     margin: 0;
     padding: 0;
     max-width: 100vw;
     overflow-x: hidden;
     margin-top: var(--header-height);
     overflow-anchor: none;
-}
-
-/*body *:not(.no-fade-in):not(.no-fade-in *) {
-    animation: fadeInAnimation ease 1.5s;
-    animation-play-state: paused;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    will-change: opacity, transform;
-}
-*/
-.fade-in-running {
-    animation-play-state: running !important;
-}
-
-.fade-in-end {
-    animation: none !important;
+    color: white;
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
 
     100% {
@@ -54,14 +48,32 @@ body {
     }
 }
 
+.fade-in-anim {
+    animation: fadeInAnimation ease 1.5s;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    will-change: opacity, transform;
+}
+
+.fade-in-running {
+    animation-play-state: running;
+}
+
+.fade-in-end {
+    animation: none !important;
+}
+
 main {
     margin-top: calc(var(--header-height) + 5px);
 }
 
-footer {
-    background-color: var(--club-gray);
-    /*Just to keep it consistent I guess*/
-    margin-top: var(--header-height);
+a {
+    color: var(--club-blue);
+}
+
+a:hover {
+    color: var(--club-blue-hover);
 }
 
 /*
@@ -70,7 +82,7 @@ Header
 
 header {
     top: 0;    
-    background-color: var(--club-gray);
+    background-color: var(--lighter-gray);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 10;
     box-sizing: border-box;
@@ -98,6 +110,12 @@ nav {
 Footer
 */
 
+footer {
+    background-color: var(--lighter-gray);
+    /*Just to keep it consistent I guess*/
+    margin-top: var(--header-height);
+}
+
 footer a {
     text-decoration: none;
 }
@@ -108,4 +126,13 @@ Misc
 
 .text-club-blue {
     color: var(--club-blue)
+}
+
+.title-main {
+    background: linear-gradient(90deg, var(--club-blue) 20%, var(--club-pink) 100%);
+    border-radius: 8px;
+    width: 70%;
+    --title-top-bottom-margin: 20px;
+    margin: calc(var(--title-top-bottom-margin) + var(--header-height)) auto var(--title-top-bottom-margin);
+    padding: 10px;
 }

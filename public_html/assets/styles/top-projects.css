@@ -1,0 +1,24 @@
+.card {
+    margin: 1em;
+    max-width: 400px;
+    background-color: var(--lighter-gray);
+    color: white;
+    border: 5px solid var(--club-blue);
+}
+
+.card > img {
+    aspect-ratio: 1 / 1;
+    border: 5px solid var(--club-pink);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.card-body > a {
+    background-color: var(--club-blue);
+    transition: background-color ease 0.5s;
+    color: white;
+}
+
+.card-body > a:hover {
+    background-color: var(--club-blue-hover);
+}

@@ -6,11 +6,9 @@ fetch('/assets/html-modules/header.html')
 
         return response.text();
     })
-
     .then(data => {
         document.body.insertAdjacentHTML("afterbegin", data);
     })
-
     .catch(error => {
         console.error('header fetch error', error);
     });
@@ -24,12 +22,10 @@ fetch('/assets/html-modules/footer.html')
 
         return response.text();
     })
-
     .then(data => {
         document.querySelector("body script").insertAdjacentHTML("beforebegin", data);
         document.dispatchEvent(footerLoadedEvent);
     })
-
     .catch(error => {
         console.error('footer fetch error', error);
     });
