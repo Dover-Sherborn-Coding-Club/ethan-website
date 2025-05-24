@@ -33,7 +33,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          path: ./
+          path: ./public_html
           source: ./public_html
           destination: ./_site
       - name: Upload artifact
