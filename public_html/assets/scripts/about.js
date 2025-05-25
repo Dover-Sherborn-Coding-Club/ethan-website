@@ -1,6 +1,6 @@
 document.querySelectorAll('.section-button').forEach(button => {
     button.addEventListener('click', () => {
-      document.querySelector('.about-section.selected').classList.remove('selected');
+      document.querySelector('.stacked-card.selected').classList.remove('selected');
 
       document.querySelector('.section-button.selected').classList.remove('selected');
 

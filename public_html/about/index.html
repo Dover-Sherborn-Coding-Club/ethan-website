@@ -20,17 +20,16 @@
 <body>
     <!--Insert Header-->
 
-    <main class='container-fluid'>
-      <h1 class="title-main text-center">About</h1>
+    <main>
+      <h1 class="title-main text-center mb-5">About</h1>
 
-      <div class="w-75 mx-auto mt-4">
-        <div class="section-buttons-container d-flex justify-content-center text-white">
+      <div class="section-buttons-container d-flex justify-content-center text-white">
           <button class="section-button selected no-fade-in" data-about-section="section_1">Goals</button>
           <button class="section-button" data-about-section="section_2">Values</button>
           <button class="section-button" data-about-section="section_3">Results</button>
         </div>
   
-        <div id="section_1" class="about-section selected">
+        <section id="section_1" class="stacked-card selected">
           <ul>
             <li>Learn and Grow</li>
             <li>Network </li>
@@ -38,9 +37,9 @@
             <li>Gain access to new experiences and opportunities</li>
             <li>Have fun!</li>
           </ul>
-        </div>
+        </section>
   
-        <div id="section_2" class="about-section no-fade-in">
+        <section id="section_2" class="stacked-card no-fade-in">
           <ul>
             <li>Respect</li>
             <li>Inclusion and Accessibility</li>
@@ -50,9 +49,9 @@
             <li>Constructive Feedback</li>
             <li>Iteration and Validation</li>
           </ul>
-        </div>
+        </section>
         
-        <div id="section_3" class="about-section no-fade-in">
+        <section id="section_3" class="stacked-card no-fade-in">
           <ul>
             <li>Enhanced Skills</li>
             <li>Community Impact</li>
@@ -62,7 +61,6 @@
             <li>A project in <a href="/top-projects">Top Projects</a>!</li>
           </ul>
         </div>
-      </div>  
     </main>
     
 

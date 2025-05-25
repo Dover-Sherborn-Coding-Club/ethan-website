@@ -128,6 +128,7 @@ Misc
 
 .title-main {
     background: linear-gradient(90deg, var(--club-blue) 20%, var(--club-pink) 100%);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 8px;
     width: 70%;
     --title-top-bottom-margin: 20px;
@@ -136,16 +137,15 @@ Misc
 }
 
 .stacked-card {
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    box-shadow: rgba(13, 169, 253, 0.4) -5px 5px, rgba(13, 169, 253, 0.3) -10px 10px, rgba(13, 169, 253, 0.2) -15px 15px, rgba(13, 169, 253, 0.1) -20px 20px, rgba(13, 169, 253, 0.05) -25px 25px;
     border: 3px solid var(--club-blue);
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     background-color: var(--lighter-gray);
 }
 
 .stacked-card > p {
-    padding: 5px;
+    padding: 5px 30px;
 }
 
 .stacked-card > h2 {
