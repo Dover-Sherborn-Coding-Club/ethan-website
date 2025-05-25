@@ -4,8 +4,6 @@
 :root {
     --header-height: 66px;
     --lighter-gray: #4a4747;
-    --club-gray:#bdbdbd;
-    --club-gray-hover: #989494;
     --club-pink: #cb3694;
     --club-pink-hover: #b20e76;
     --club-blue: #0da9fd;
@@ -135,4 +133,23 @@ Misc
     --title-top-bottom-margin: 20px;
     margin: calc(var(--title-top-bottom-margin) + var(--header-height)) auto var(--title-top-bottom-margin);
     padding: 10px;
+}
+
+.stacked-card {
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 3px solid var(--club-blue);
+    margin: 0 auto 20px;
+    background-color: var(--lighter-gray);
+}
+
+.stacked-card > p {
+    padding: 5px;
+}
+
+.stacked-card > h2 {
+    background: linear-gradient(var(--club-blue) 80%, var(--lighter-gray) 100%);
+    padding-bottom: 10px;
+    border-radius: 2px;
 }
